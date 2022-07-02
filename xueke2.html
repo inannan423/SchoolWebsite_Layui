@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息学院招生网</title>
+
+    <!-- 引入layui -->
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./wowjs/css/animate.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleintro.css">
+    <link rel="icon" href="logo1.png">
+
+</head>
+<script src="./layui/layui.js"></script>
+<script src="./wowjs/js/wow.js"></script>
+<script src="script.js"></script>
+
+<script src="./js/jquery.min.js"></script>
+ <script>
+ window.onload=function(){
+    var password = "";
+    password = prompt('请输入密码-网络工程:', '');
+	$.get("/myNode/xueke2", {'password':password}, function (res) {
+		
+		if(res !="success"){
+			alert("密码不正确,无法进入本站!!");
+			window.location.href = "http://www.bjfuad.com/index.html";
+		}else{
+		alert("密码正确！");
+		}
+		
+	});
+}
+</script>
+
+
+<body>
+    <!-- head -->
+    <div class="layui-header layui-bg-blue header header-doc wow slideInDown">
+        <a href="index.html" class="lg ">
+            <img src="logo.png" class="logo wow slideInLeft" alt="layui">
+        </a>
+
+        <ul class="layui-nav nav layui-bg-blue" lay-filter="left-div" style="font-size: 50px;">
+            <li class="layui-nav-item "><a href="index.html">首页</a></li>
+            <li class="layui-nav-item "><a href="intro.html">学院介绍</a></li>
+            <li class="layui-nav-item layui-this "><a href="xueke.html">学科介绍</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">人才培养</a>
+                <dl class="layui-nav-child layui-nav-child-c">
+                    <!-- 二级菜单 -->
+                    <dd><a href="http://it.bjfu.edu.cn/bkspy/pyfa/index.html">本科生</a></dd>
+                    <dd><a href="http://it.bjfu.edu.cn/yjsgz/yjspy/index.html">研究生</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-- head -->
+
+    <div class="bigpic wow pulse">
+        <span class="txts">S E E&nbsp;&nbsp;&nbsp; Y O U &nbsp;&nbsp;&nbsp;I N&nbsp;&nbsp;&nbsp; B J F U
+            &nbsp;&nbsp;&nbsp;I T&nbsp;&nbsp;&nbsp; S C H O O L</span>
+        <img src="/images/bigimg.jpg" class="bigimg" alt="bigpic">
+    </div>
+    <div class="main">
+        <div class="sidebar wow slideInLeft">
+            <ul class="layui-nav layui-nav-tree layui-bg-blue" lay-filter="test">
+                <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                <a href="xueke.html ">
+                    <li class="layui-nav-item1">
+                        数字媒体技术
+                    </li>
+                </a>
+
+                <a href="xueke1.html">
+                    <li class="layui-nav-item1">
+                        计算机科学与技术
+                    </li>
+                </a>
+
+                <a href="xueke2.html">
+                    <li class="layui-nav-item1    layui-nav-itemed layui-this">网络工程</li>
+                </a>
+
+                <a href="xueke3.html">
+                    <li class="layui-nav-item1">大数据技术</li>
+                </a>
+                <a href="xueke4.html">
+                    <li class="layui-nav-item1">物联网工程</li>
+                </a>
+                <a href="xueke5.html">
+                    <li class="layui-nav-item1 ">信息管理与信息系统</li>
+                </a>
+            </ul>
+        </div>
+        <style>
+            .imga {
+                width: 840px;
+                height: 440px;
+
+            }
+        </style>
+        <div class="info">
+            <div class="title">网络工程</div>
+            <hr>
+            <img class="imga" src="/images/网工.png" alt="">
+            <div style="font-size:20px;line-height:40px;margin-bottom:20px">
+                学制四年，授工学学士学位。<br> <span style="font-weight: bold;">特色优势： </span>重视基础理论与实践能力的培养，将强学生对计算机网络通信的原理与应用技术的理解与掌握。<br> <span style="font-weight: bold;">培养目标: </span>本专业培养德、智、体全面发展，具有计算机科学与技术理论基础，掌握计算机网络、通信网络的通讯原理，涵盖系统管理与运行技术，着重培养能与实际计算机网络、传输网络及各类信息系统运行工作相结合的，具有计算机网络、传输网络技术研究潜能、兼具系统开发、管理与运行能力，了解学科发展最新技术的复合型人才。<br> <span style="font-weight: bold;">主要课程：</span>程序设计基础、计算机组成原理、计算机体系结构、电路与电子学基础、数字电子技术、操作系统、数据结构、计算机网络、数据库系统、UNIX环境程序设计、交换与路由、网络管理、数据分析、计算机网络安全、数字通信、verilog程序设计、传输网络、网络服务、信息系统分析与设计、网络程序设计、web系统与软件设计模式、嵌入式系统、无线网络等课程。<br> <span style="font-weight: bold;">就业方向：</span>学生毕业后可适应国民经济各行业的信息化与网络化需求，具有从事计算机网络、传输网络系统规划、设计、管理与运行能力，具有大型数据中心的管理与运行工作的潜能，可在研究机构、政府机关、高等院校、企事业单位、金融领域从事计算机网络应用系统的研究、规划、设计与开发工作。
+
+            </div>
+        </div>
+    </div>
+        <div class="foot wow slideInUp layui-row">
+            <div class="foot_logo">
+                <img src="./images/biglogo.png" class="biglogo" alt="biglogo">
+            </div>
+            <div class="foot_contact">
+                <span style="font-weight: bold;font-size:20px">联系我们</span><br>
+                <span style="font-weight: bold;font-size:20px">CONTACT US</span><br><br>
+                电话：010-62336230 <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;010-62338222 <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;010-62338216 <br>
+                地址：北京市海淀区清华东路35号西配楼 <br>
+                邮箱：it@bjfu.edu.cn
+            </div>
+            <div class="foot_contact1">
+                <span style="font-weight: bold;font-size:20px">快速链接</span><br>
+                <span style="font-weight: bold;font-size:20px">LINKS</span><br><br>
+                <a style="text-decoration:none;" href="http://it.bjfu.edu.cn/index.html">信息学院官网</a> <br>
+                <a href="http://www.bjfu.edu.cn/">北京林业大学官网</a> <br>
+                <a href="http://zsb.bjfu.edu.cn/f">北京林业大学本科招生网</a> <br>
+                <a href="http://yzb.bjfu.edu.cn/">北京林业大学研究生招生网</a> <br>
+                学院公众号：北林信息人 <br>
+            </div>
+        </div>
+    
+</body>

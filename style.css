@@ -1,0 +1,214 @@
+.logo {
+    position: relative;
+    left: 0;
+    height: 120.8px;
+    width: 222px;
+}
+
+.lg {
+    position: relative;
+    /* top: -20px; */
+    left: 50px;
+}
+
+.nav {
+    position: relative;
+    /* top: -20px; */
+    right: 50px;
+    font-size: 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+
+    height: 400px;
+    width: 100%;
+}
+
+
+/* 横标题 */
+.tit {
+    text-align: center;
+    font-size: 30px;
+    width: 20px;
+}
+
+.txt {
+    border-bottom: 4px solid #17f3cc;
+    padding: 0 0 11px;
+    font-size: 0;
+    width: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blok {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.ending {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+.card {
+    /* margin-top: 30px; */
+    margin-left: 20px;
+    height: 460px;
+    width: 300px;
+    cursor:pointer;
+}
+.cards {
+    /* margin-top: 30px; */
+    margin-left: 20px;
+    height: 460px;
+    width: 300px;
+}
+.card1 {
+    background-color: aliceblue;
+    height: 332px;
+    overflow: hidden;
+}
+
+.card2 {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+    background-color: #7B68EE;
+}
+
+.card4 {
+    position: relative;
+    left: 10px;
+    width: 300px;
+    height: 380px;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color:#7B68EE;
+}
+
+.card5 {
+    position: relative;
+    left: 10px;
+
+    width: 900px;
+    height: 380px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    background-color: none;
+}
+
+.card6 {
+    position: relative;
+    left: 10px;
+    width: 900px;
+    height: 380px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    background-color: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.card3 {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    cursor:pointer;
+}
+.card31 {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.tt{
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+.xinx {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 5px solid #7B68EE;
+    padding: 10px;
+}
+
+.code {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.endwords {
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.foot{
+    width: 100%;
+    height: 190px;
+    background-color: #7B68EE;
+    display: flex;
+    align-items: center;
+}
+
+.foot_logo{
+    height: 90%;
+    width:30%;
+    position: relative;
+    left: 20px;
+    /* background-color: aliceblue; */
+}
+.biglogo{
+    width: 300px;
+    height: 164px;
+}
+.foot_contact{
+    height: 90%;
+    width:17%;
+    position: absolute;
+    /* float: right; */
+    right: 350px;
+    color: white;
+}
+
+.foot_contact1{
+    height: 90%;
+    width:17%;
+    position: absolute;
+    /* float: right; */
+    right: 20px;
+    color: white;
+}
+
+
+

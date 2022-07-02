@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信息学院招生网</title>
+
+  <!-- 引入layui -->
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./wowjs/css/animate.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo1.png">
+
+</head>
+<script src="./layui/layui.js"></script>
+<script src="./wowjs/js/wow.js"></script>
+<script src="./js/jquery.min.js"></script>
+
+<body>
+  <!-- head -->
+  <div class="layui-header layui-bg-blue header header-doc wow slideInDown">
+    <a href="index.html" class="lg ">
+      <img src="logo.png" class="logo wow slideInLeft" alt="layui">
+    </a>
+
+    <ul class="layui-nav nav layui-bg-blue" lay-filter="left-div" style="font-size: 50px;">
+      
+      <li class="layui-nav-item layui-this "><a href="index.html">首页</a></li>
+      <li class="layui-nav-item "><a href="intro.html">学院介绍</a></li>
+      <li class="layui-nav-item"><a href="xueke.html">学科介绍</a></li>
+      <li class="layui-nav-item "><a href="bjfu_admission.html">学校首页</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">人才培养</a>
+        <dl class="layui-nav-child layui-nav-child-c">
+          <!-- 二级菜单 -->
+          <dd><a href="http://it.bjfu.edu.cn/bkspy/pyfa/index.html">本科生</a></dd>
+          <dd><a href="http://it.bjfu.edu.cn/yjsgz/yjspy/index.html">研究生</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  <!-- head -->
+
+  <!-- 轮播图 -->
+  <div class="layui-carousel wow pulse" id="test1">
+    <div carousel-item>
+      <div><img src="/images/pic9.png" class="banner" alt=""></div>
+      <div><img src="/images/pic7.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic3.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic4.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic2.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic5.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic6.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic8.jpg" class="banner" alt=""></div>
+      <div><img src="/images/pic1.jpg" class="banner" alt=""></div>
+    </div>
+  </div>
+  </div>
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>招 生 信 息</legend>
+  </div>
+  <div class="blok ">
+    <div class="layui-card card wow slideInLeft" onclick="goto4()">
+      <img class="card3" src="/images/rencai.png" alt="cs">
+      <div style="display: flex;    text-align:center ;justify-content: center;align-items: center;">
+        <div class="layui-card-body tt">北林人才培养
+        </div>
+      </div>
+    </div>
+    <div class="layui-card card wow slideInLeft" onclick="goto3()">
+      <img class="card3" src="/images/gk.png" alt="cs">
+      <div style="display: flex;    text-align:center ;justify-content: center;align-items: center;">
+        <div class="layui-card-body tt">高校专项计划招生简章
+        </div>
+      </div>
+    </div>
+
+    <div class="layui-card card wow slideInRight" onclick="goto2()">
+
+      <img onclick="goto1()" class="card3" src="/images/tioj.png" alt="cs">
+      <div style="display: flex;    text-align:center ;justify-content: center;align-items: center;">
+        <div class="layui-card-body tt">调剂工作的通知（第二轮）
+        </div>
+      </div>
+
+    </div>
+
+    <div class="layui-card card wow slideInRight " onclick="goto1()">
+      <img class="card3" src="/images/yanjius.png" alt="cs">
+      <div style="display: flex;    text-align:center ;justify-content: center;align-items: center;">
+        <div class="layui-card-body tt" onclick="goto1()">2022年研究生入学成绩
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>
+        招 生 视 频
+      </legend>
+  </div>
+
+  <div class="blok">
+    <div class="layui-card card2 wow slideInRight">
+        <video width="600" height="400" controls="controls" autoplay="autoplay">
+          <source src="/video/p.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div class="layui-card card2 wow slideInLeft" autoplay="autoplay">
+      <video width="600" height="400" controls="controls">
+        <source src="/video/q.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>计 算 机 类</legend>
+  </div>
+  <div class="blok ">
+    <div class="layui-card card wow slideInLeft" onclick="setTop()">
+      <img class="card3" src="/images/cs.png" alt="cs">
+      <div class="layui-card-body tt">
+        计算机科学与技术
+      </div>
+    </div>
+    <div class="layui-card card wow slideInLeft" onclick="setTop1()">
+      <img class="card3" src="/images/media.png" alt="cs">
+      <div class="layui-card-body tt">
+        数字媒体技术
+      </div>
+    </div>
+    <div class="layui-card card wow pulse" onclick="setTop2()">
+      <img class="card3" src="/images/bd.png" alt="cs">
+      <div class="layui-card-body tt">
+        数据科学与大数据
+      </div>
+    </div>
+    <div class="layui-card card wow slideInRight" onclick="setTop3()">
+      <img class="card3" src="/images/netw.png" alt="cs">
+      <div class="layui-card-body tt">
+        网络工程
+      </div>
+    </div>
+    <div class="layui-card card wow slideInRight" onclick="setTop4()">
+      <img class="card3" src="/images/wlianw.png" alt="cs">
+      <div class="layui-card-body tt">
+        物联网工程
+      </div>
+    </div>
+  </div>
+
+  <fieldset class="layui-elem-field xinx ">
+    <legend>信 息 专 业</legend>
+    <div class="layui-card card4 wow bounce">
+      <img class="card3" src="/images/xinxi.png" alt="cs">
+    </div>
+    <div class="layui-card card5 wow bounce">
+      <div class="layui-card-body" style="text-align: left;color:aliceblue;">
+        <span style="font-size: 20px;font-weight:bolder">信息管理与信息系统专业</span><br>
+        Information Management and Information System<br>
+        学制四年，授管理学学士学位。<br>
+
+        <span style="font-weight: bold;">特色优势：</span>
+        本专业前身是1986年起招生的林业信息管理专业（授工学学位），1998年全国专业目录调整后更名为“信息管理与信息系统”，目前已经为社会信息化培养和输送了30届本科毕业生。本专业技术与管理并重，强调数学基础，并具有资源与环境信息管理特色，之上有林业信息工程博士点，林业信息工程硕士点，以及农业信息化专业学位硕士点。
+
+        培养目标：培养德智体全面发展的，适应社会信息化需要，掌握现代信息管理的基本理论，掌握管理信息系统的分析、设计方法和实现技术，具备较强的信息系统开发、实施、管理与评价的能力，信息资源管理与利用能力，信息分析研究能力，以资源与环境信息管理为特色的高素质复合应用型技术人才。
+
+        <br> <span
+          style="font-weight: bold;">主要课程：</span>程序设计基础、数据结构、面向对象程序设计、计算机组成原理、操作系统、计算机网络、数据库原理与应用、信息系统分析与设计、离散数学、运筹学、信息分析、信息资源管理、空间信息系统、遥感数字图像处理、资源和环境信息管理、IT项目管理、信息系统可用性、财务信息管理、ERP原理与应用、电子商务、Web应用系统开发、Java
+        语言、Linux应用、Python应用、Go语言程序设计、信息服务与信息检索、网络工程、R数据处理基础、探索性数据分析、分布式系统与云计算概论等。
+
+        <br> <span
+          style="font-weight: bold;">就业方向：</span>毕业生可在IT行业从事信息系统的开发、实施、管理和评价等相关工作，也可在国家各级管理部门、工商企业、金融机构、相关科研教学单位等从事信息化组织与运作、信息分析、信息咨询、信息服务等信息管理工作。
+
+        <br> <span style="font-weight: bold;">本校对应硕士点：</span>林业信息工程、农业工程与信息技术（专业学位）
+
+        <br> <span style="font-weight: bold;">本校对应博士点：</span>林业信息工程
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>研 究 生</legend>
+  </div>
+  <div class="blok yanjius">
+    
+    <div class="layui-card cards wow slideInLeft">
+      <img class="card31" src="/images/linye.png" alt="cs">
+      <div class="layui-card-body tt">
+        林业信息工程（博士）
+      </div>
+    </div>
+    <div class="layui-card cards wow slideInLeft">
+      <img class="card31" src="/images/cs1.png" alt="cs">
+      <div class="layui-card-body tt">
+        计算机科学与技术
+      </div>
+    </div>
+    <div class="layui-card cards wow slideInLeft">
+      <img class="card31" src="/images/linxin.png" alt="cs">
+      <div class="layui-card-body tt">
+        林业信息工程
+      </div>
+    </div>
+    <div class="layui-card cards wow slideInLeft">
+      <img class="card31" src="/images/dianzi.png" alt="cs">
+      <div class="layui-card-body tt">
+        电子信息（全日制/非全日制）
+      </div>
+    </div>
+    <div class="layui-card cards wow slideInLeft">
+      <img class="card31" src="/images/ny.png" alt="cs">
+      <div class="layui-card-body tt">
+        农业工程与信息技术
+      </div>
+    </div>
+  </div>
+
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>质量 特色 结构 创新</legend>
+  </div>
+  <!-- 代码面板 -->
+  <div class="code wow slideInRight">
+    <pre class="layui-code">
+    //C++
+    #include "iostream"
+    using namespace std;
+
+    int main(){
+      string welcome = "欢迎来到";
+      string bjfu = "北京林业大学";
+      string itschool = "信息学院";
+      string word=welcome+bjfu+itschool;
+      std::cout<< word;
+      return 0;
+    }
+    <br>
+    #python
+    welcome = "欢迎来到"
+    bjfu = "北京林业大学"
+    itschool = "信息学院"
+    word = welcome + bjfu + itschool
+    print(word)
+    <br>
+    //java
+    public class Main {
+      public static void main(String[] args){
+          System.out.println("欢迎来到北京林业大学信息学院");
+      }
+    }
+    </pre>
+  </div>
+  <div class="line">
+    <fieldset class="layui-elem-field layui-field-title">
+      <legend>SEE YOU IN BJFU IT SCHOOL</legend>
+  </div>
+
+
+  <div class="foot wow slideInUp layui-row">
+    <div class="foot_logo">
+      <img src="./images/biglogo.png" class="biglogo" alt="biglogo">
+    </div>
+    <div class="foot_contact">
+      <span style="font-weight: bold;font-size:20px">联系我们</span><br>
+      <span style="font-weight: bold;font-size:20px">CONTACT US</span><br><br>
+      电话：010-62336230 <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;010-62338222 <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;010-62338216 <br>
+      地址：北京市海淀区清华东路35号西配楼 <br>
+      邮箱：it@bjfu.edu.cn
+    </div>
+    <div class="foot_contact1">
+      <span style="font-weight: bold;font-size:20px">快速链接</span><br>
+      <span style="font-weight: bold;font-size:20px">LINKS</span><br><br>
+      <a style="text-decoration:none;" href="http://it.bjfu.edu.cn/index.html">信息学院官网</a> <br>
+      <a href="http://www.bjfu.edu.cn/">北京林业大学官网</a> <br>
+      <a href="http://zsb.bjfu.edu.cn/f">北京林业大学本科招生网</a> <br>
+      <a href="http://yzb.bjfu.edu.cn/">北京林业大学研究生招生网</a> <br>
+      学院公众号：北林信息人 <br>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>

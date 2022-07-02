@@ -1,0 +1,127 @@
+.bigpic {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bigimg {
+    height: 100%;
+}
+
+.txts {
+    font-size: 40px;
+    color: #7B68EE;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+
+    width: 37%;
+    height: 100%;
+}
+
+.info {
+    width: 61%;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.miantext {
+    font-size: 30px;
+}
+
+.tto {
+    font-size: 25px;
+    color: #7B68EE;
+}
+
+.cc {
+    font-size: 18px;
+}
+
+.leaders-leader {
+    display: flex;
+    padding: 40px 0;
+}
+
+.leaders-leader+.leaders-leader {
+    border-top: 1px solid #7B68EE;
+}
+
+.leaders-leader-left {
+    flex-grow: 1;
+    margin-right: 80px;
+}
+
+.leaders-leader-left .leader-name {
+    margin-bottom: 6px;
+}
+
+.leaders-leader-left .leader-name h2 {
+    width: 130px;
+    height: 53px;
+    font-size: 36px;
+    font-family: 宋体-Bold, 宋体;
+    font-weight: bold;
+    color: #7B68EE;
+    line-height: 53px;
+
+    text-align: justify;
+}
+
+
+
+.leaders-leader-left .leader-title {
+    margin-bottom: 45px;
+}
+
+.leaders-leader-left .leader-title h3 {
+    height: 32px;
+    font-size: 24px;
+    font-family: 宋体-Bold, 宋体;
+    font-weight: bold;
+    color: #000000;
+    line-height: 32px;
+}
+
+.leaders-leader-left .leader-summary {
+    height: 160px;
+    font-size: 16px;
+    font-family: 宋体;
+    color: #000000;
+    line-height: 32px;
+
+    overflow: hidden;
+    /*文本超出隐藏*/
+    display: -webkit-box;
+    /*盒子模型微弹性伸缩模型*/
+    -webkit-box-orient: vertical;
+    /*伸缩盒子的子元素垂直排列*/
+    -webkit-line-clamp: 5;
+    /*文本显示5行*/
+}
+
+.leaders-leader-right {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+h2{
+    font-size: 40px;
+}
